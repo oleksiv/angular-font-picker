@@ -81,16 +81,16 @@ export default app.component('appComponent', {
                 $scope.applyOffset();
             }
 
-            $scope.prevPageNotExist = function () {
+            $scope.prevPageDoNotExist = function () {
                 return $scope.currentOffset - $scope.itemsPerPage < 0;
             }
 
-            $scope.lastPageNotExist = function () {
+            $scope.lastPageDoNotExist = function () {
                 return $scope.currentOffset + $scope.itemsPerPage + 1 >= $scope.items.length;
             }
 
             $scope.prevPage = function () {
-                if ($scope.prevPageNotExist()) {
+                if ($scope.prevPageDoNotExist()) {
                     return;
                 }
                 $scope.currentOffset -= $scope.itemsPerPage;

@@ -1,6 +1,7 @@
 'use strict';
 
 import app from "../../app.module.js";
+import FontDetailController from "../font-detail/font-detail.controller.js";
 
 export default app.component('fontCard', {
     templateUrl: 'scripts/modules/app/components/font-card/font-card.component.html',
@@ -33,7 +34,7 @@ export default app.component('fontCard', {
         $scope.showDialog = function (ev) {
             $mdDialog.show({
                 locals: {font: $scope.$ctrl.font},
-                controller: DetailFontController,
+                controller: FontDetailController,
                 templateUrl: `scripts/modules/app/components/font-detail/font-detail.component.html`,
                 parent: angular.element(document.body),
                 targetEvent: ev,
@@ -47,14 +48,3 @@ export default app.component('fontCard', {
         };
     }]
 })
-
-
-function DetailFontController($scope, font) {
-    $scope.font = font;
-    $scope.content = 'Almost before we knew it, we had left the ground.';
-    $scope.fontSize = 40;
-
-    $scope.style = function () {
-        return {'font-size': $scope.fontSize};
-    }
-}

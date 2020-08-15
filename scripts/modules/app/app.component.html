@@ -41,8 +41,8 @@
 
 <div layout="row" layout-align="center center">
     <div flex-offset="30" flex="30" layout="row">
-        <md-button class="md-raised md-primary" flex="50" ng-click="prevPage()" ng-disabled="prevPageNotExist()">Prev</md-button>
-        <md-button class="md-raised md-primary" flex="50" ng-click="nextPage()"  ng-disabled="lastPageNotExist()">Next</md-button>
+        <md-button class="md-raised md-primary" flex="50" ng-click="prevPage()" ng-disabled="prevPageDoNotExist()">Prev</md-button>
+        <md-button class="md-raised md-primary" flex="50" ng-click="nextPage()"  ng-disabled="lastPageDoNotExist()">Next</md-button>
     </div>
     <div flex="30" >
         Page {{currentOffset / itemsPerPage + 1 | number: 0}} of {{filteredItems.length / itemsPerPage + 1 | number: 0}}
