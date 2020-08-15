@@ -1,0 +1,26 @@
+<md-dialog style="min-width: 1201px">
+    <md-dialog-content>
+
+        <div class="md-dialog-content">
+            <h1>Font Family: {{font.family}}</h1>
+
+            <div layout="row">
+                <md-input-container flex>
+                    <label for="content">Type your text here</label>
+                    <input id="content" ng-model="content"></input>
+                </md-input-container>
+                <md-slider-container flex>
+                    <md-slider min="8" max="300" ng-model="fontSize" aria-label="red" id="red-slider"
+                               class="md-warn">
+                    </md-slider>
+                </md-slider-container>
+            </div>
+
+            <ul>
+                <li ng-repeat="variant in font.variants">
+                    <font-sample variant="variant" font="font" content="content" font-size="fontSize"></font-sample>
+                </li>
+            </ul>
+        </div>
+    </md-dialog-content>
+</md-dialog>

@@ -1,0 +1,11 @@
+<md-card ng-click="showDialog()">
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">{{$ctrl.font.family}}</span>
+            <span class="md-subhead">{{$ctrl.font.variants.length}} {{$ctrl.font.variants.length === 1 ? 'style' : 'styles'}}</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content ng-style="style" class="content-card">
+        {{$ctrl.content}}
+    </md-card-content>
+</md-card>

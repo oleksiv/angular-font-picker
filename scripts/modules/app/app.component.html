@@ -1,0 +1,50 @@
+<div layout="row" layout-padding>
+    <md-card  layout-fill="">
+        <div layout="row" layout-fill="" >
+            <md-input-container flex>
+                <label for="search">Search</label>
+                <input id="search" type="text" ng-model="searchQuery" ng-change="searchQueryChanged()">
+            </md-input-container>
+            <md-input-container flex>
+                <label>Content Type</label>
+                <md-select ng-model="content">
+                    <md-option ng-repeat="c in contentList" ng-value="c.index">
+                        {{c.title}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container flex>
+                <label for="content">Custom text</label>
+                <input id="content" type="text" ng-model="customContent">
+            </md-input-container>
+            <md-input-container flex>
+                <label>Font size</label>
+                <md-select ng-model="fontSize" placeholder="{{fontSize}}">
+                    <md-option ng-repeat="fs in fontSizes" ng-value="fs">
+                        {{fs}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+            <md-slider-container flex>
+                <md-slider min="8" max="300" ng-model="fontSize" aria-label="red" id="red-slider"
+                           class="md-warn">
+                </md-slider>
+            </md-slider-container>
+        </div>
+    </md-card>
+</div>
+<div layout="row" layout-wrap="">
+    <div ng-repeat="item in currentPageFonts" flex="100" flex-gt-xs="50" flex-gt-sm="33" flex-gt-md="25" class="overflow-hidden" >
+        <font-card font="item" content="getContent()" font-size="fontSize"></font-card>
+    </div>
+</div>
+
+<div layout="row" layout-align="center center">
+    <div flex-offset="30" flex="30" layout="row">
+        <md-button class="md-raised md-primary" flex="50" ng-click="prevPage()" ng-disabled="prevPageNotExist()">Prev</md-button>
+        <md-button class="md-raised md-primary" flex="50" ng-click="nextPage()"  ng-disabled="lastPageNotExist()">Next</md-button>
+    </div>
+    <div flex="30" >
+        Page {{currentOffset / itemsPerPage + 1 | number: 0}} of {{items.length / itemsPerPage + 1 | number: 0}}
+    </div>
+</div>

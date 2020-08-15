@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Relayto Demo Font Picker</title>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+
+
+</head>
+<body ng-app="app">
+    <app-component></app-component>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-ui-scroll/dist/ui-scroll.min.js"></script>
+    <script src="node_modules/angular-ui-scroll/dist/ui-scroll-grid.min.js"></script>
+
+    <script type="module" src="scripts/modules/app/app.module.js"></script>
+    <script type="module" src="scripts/modules/app/app.component.js"></script>
+    <script type="module" src="scripts/modules/app/components/font-card/font-card.component.js"></script>
+    <script type="module" src="scripts/modules/app/components/font-sample/font-sample.component.js"></script>
+
+    <style >
+        #vertical-container {
+            height: calc(100% - 100px);
+            /*max-width: 1024px;*/
+            margin: auto;
+        }
+
+        .repeated-item {
+            /*height: 400px;*/
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .search-toolbar {
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 7px 8px;
+            height: 50px;
+
+        }
+
+        .search-input {
+            display: block;
+            padding: 0;
+            height: 32px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .content-card {
+            word-wrap: break-word;
+        }
+    </style>
+</body>
+</html>
