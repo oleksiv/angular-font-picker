@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1116bbf5-8f41-46f8-bbc8-965fcbb89314" name="Default Changelist" comment="small refactoring fix">
+      <change beforePath="$PROJECT_DIR$/scripts/modules/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/modules/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/modules/app/components/font-detail/font-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/modules/app/components/font-detail/font-detail.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1g99IllFzLGYYgZFauyzHieqJPY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1116bbf5-8f41-46f8-bbc8-965fcbb89314" name="Default Changelist" comment="" />
+      <created>1597515863395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597515863395</updated>
+      <workItem from="1597515866105" duration="1776000" />
+      <workItem from="1597520215572" duration="758000" />
+    </task>
+    <task id="LOCAL-00001" summary="small bug fixes">
+      <created>1597516186197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597516186197</updated>
+    </task>
+    <task id="LOCAL-00002" summary="font-detail.controller.js fix">
+      <created>1597516703817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597516703817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="small refactoring fix">
+      <created>1597516777025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597516777025</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="small bug fixes" />
+    <MESSAGE value="font-detail.controller.js fix" />
+    <MESSAGE value="small refactoring fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="small refactoring fix" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1597516778063">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597516778063" />
+    <state x="986" y="433" width="587" height="534" key="find.popup" timestamp="1597516761141">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="986" y="433" width="587" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597516761141" />
+  </component>
+</project>
