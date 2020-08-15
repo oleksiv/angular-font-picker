@@ -34,7 +34,11 @@ export default app.component('fontSample', {
         }
 
         $scope.getCurrentVariantFile = function () {
-            return $scope.$ctrl.font.files[$scope.$ctrl.variant];
+            return $scope.replaceUnsecureProtocol($scope.$ctrl.font.files[$scope.$ctrl.variant]);
+        }
+
+        $scope.replaceUnsecureProtocol = function(str) {
+            return str.replace('http://', 'https://');
         }
 
         $scope.getCurrentFontVariantUniqueName = function () {

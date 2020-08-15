@@ -14,7 +14,7 @@ export default app.component('fontCard', {
 
         this.$onInit = function () {
             // Load font from remote url
-            const fontFace = new FontFace($scope.$ctrl.font.family, `url(${$scope.$ctrl.font.files.regular})`);
+            const fontFace = new FontFace($scope.$ctrl.font.family, `url(${$scope.replaceUnsecureProtocol($scope.$ctrl.font.files.regular)})`);
             fontFace.load().then((loadedFont) => {
                 document.fonts.add(loadedFont);
             });
@@ -24,6 +24,10 @@ export default app.component('fontCard', {
 
         this.$onChanges = function () {
             $scope.style = {...$scope.style, 'font-size': $scope.$ctrl.fontSize + 'px'}
+        }
+
+        $scope.replaceUnsecureProtocol = function (str) {
+            return str.replace('http://', 'https://');
         }
 
         $scope.showDialog = function (ev) {
