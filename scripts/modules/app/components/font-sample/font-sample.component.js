@@ -29,10 +29,6 @@ export default app.component('fontSample', {
             $scope.updateStyling();
         }
 
-        $scope.downloadFont = function () {
-
-        }
-
         $scope.getCurrentVariantFile = function () {
             return $scope.replaceUnsecureProtocol($scope.$ctrl.font.files[$scope.$ctrl.variant]);
         }
